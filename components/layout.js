@@ -29,8 +29,9 @@ export default function Layout({ children, home }) {
 			{home ? (
 				<>
 					<div className='hero'>
-						<div class='hero-content text-white'>
-							This is lise, your friend who likes to code
+						<div className='overlay z-25 bg-black absolute w-full h-full opacity-25'></div>
+						<div className='hero-content z-50 text-white flex items-center h-full md:pl-20 w-full absolute'>
+							<h1>This is lise, your friend who likes to code</h1>
 						</div>
 					</div>
 					<Image
