@@ -1,9 +1,5 @@
 module.exports = {
-	purge: [
-		// Use *.tsx if using TypeScript
-		'./pages/**/*.js',
-		'./components/**/*.js',
-	],
+	purge: [],
 	darkMode: false, // or 'media' or 'class'
 	theme: {
 		extend: {},
