@@ -58,6 +58,7 @@ img {
     background-color: blue;
     width: 100%;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 @media (max-width: 768px) {
