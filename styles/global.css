@@ -55,7 +55,6 @@ img {
 .hero {
     background-image: url('/images/hero-background.jpg');
     height: 100vh;
-    background-color: blue;
     width: 100%;
     background-size: cover;
     background-attachment: fixed;
