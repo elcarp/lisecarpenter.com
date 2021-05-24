@@ -26,7 +26,13 @@ export default function Layout({ children, home }) {
 				<meta name='og:title' content={siteTitle} />
 				<meta name='twitter:card' content='summary_large_image' />
 			</Head>
-			<header className={styles.header}></header>
+			<header
+				className={`fixed w-full text-white z-50 justify-between flex justify-between p-4`}>
+				<div className='logo flex justify-center items-center border border-aqua-blue rounded-full p-4'>
+					<h3 className='leading-none text-xl -mb-1 text-aqua-blue'>L</h3>
+				</div>
+				<div> </div>
+			</header>
 			{home ? (
 				<>
 					<div className='hero flex items-center h-full '>
