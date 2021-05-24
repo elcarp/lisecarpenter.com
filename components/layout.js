@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
+import ReactTypingEffect from 'react-typing-effect'
 
 const name = 'Lise Carpenter'
 export const siteTitle = 'Next.js Sample Website'
@@ -29,12 +30,13 @@ export default function Layout({ children, home }) {
 			{home ? (
 				<>
 					<div className='hero flex items-center h-full '>
-						<div className='overlay z-25 bg-black absolute w-full h-full opacity-25'></div>
+						<div className='overlay z-25 bg-black absolute w-full h-full opacity-50'></div>
 						<div className='hero-content z-50 text-white md:pl-20 w-full absolute'>
 							<h1 className='hover:text-aqua-blue'>Hi, I'm Lise Carpenter</h1>
-							<p className='uppercase tracking-widest text-sm text-aqua-blue'>
-								This is lise, your friend who likes to code
-							</p>
+							<ReactTypingEffect
+								className='tracking-widest text-sm text-aqua-blue'
+								text={['{ alert("Your friend who likes to code") }']}
+							/>
 						</div>
 					</div>
 					<Image
