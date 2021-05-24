@@ -70,7 +70,12 @@ export default function Layout({ children, home }) {
 							</p>
 						</div>
 						<Skills />
-						{/* <div className='tech-stack'>&nbsp;</div> */}
+					</div>
+					<div className='tech-stack h-96 bg-grey pt-10'>
+						<h1
+							className={`${utilStyles.heading2Xl} pt-4 text-white text-center`}>
+							Current Preferred Tech Stack
+						</h1>
 					</div>
 				</>
 			) : (
