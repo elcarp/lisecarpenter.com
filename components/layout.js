@@ -28,10 +28,13 @@ export default function Layout({ children, home }) {
 			<header className={styles.header}></header>
 			{home ? (
 				<>
-					<div className='hero'>
+					<div className='hero flex items-center h-full '>
 						<div className='overlay z-25 bg-black absolute w-full h-full opacity-25'></div>
-						<div className='hero-content z-50 text-white flex items-center h-full md:pl-20 w-full absolute'>
-							<h1>This is lise, your friend who likes to code</h1>
+						<div className='hero-content z-50 text-white md:pl-20 w-full absolute'>
+							<h1 className='hover:text-aqua-blue'>Hi, I'm Lise Carpenter</h1>
+							<p className='uppercase tracking-widest text-sm text-aqua-blue'>
+								This is lise, your friend who likes to code
+							</p>
 						</div>
 					</div>
 					<Image

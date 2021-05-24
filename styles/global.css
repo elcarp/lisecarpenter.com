@@ -1,18 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
 @layer base {
     h1 {
-        @apply text-2xl;
+        @apply text-5xl;
+        font-family: 'Sacramento', cursive;
     }
 
     h2 {
         @apply text-xl;
+        font-family: 'Sacramento', cursive;
     }
 
     h3 {
         @apply text-lg;
+        font-family: 'Sacramento', cursive;
     }
 
     a {
@@ -24,8 +29,7 @@ html,
 body {
     padding: 0;
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
-        Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     font-size: 18px;
 }
