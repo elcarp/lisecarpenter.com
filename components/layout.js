@@ -37,8 +37,8 @@ export default function Layout({ children, home }) {
 			{home ? (
 				<>
 					<Hero />
-					<div className='about-me w-full bg-grey py-20 text-white px-5 md:px-20'>
-						<div className='w-full md:w-1/2'>
+					<div className='about-me w-full bg-grey py-20 text-white px-5 md:px-20 block md:flex'>
+						<div className='w-full md:w-1/2 px-4'>
 							<h1 className={`${utilStyles.heading2Xl} pb-4`}>
 								Profile & Background
 							</h1>
@@ -66,6 +66,37 @@ export default function Layout({ children, home }) {
 								200 teacher – check out my yoga site here!) and traveling the
 								world.
 							</p>
+						</div>
+						<div className='w-full px-4 md:w-1/2 grid grid-cols-2'>
+							<div className='skill-box px-4 text-center'>
+								I can code your site from scratch if you’d like. I’m fluent in
+								HTML, CSS and pretty good with JavaScript/TypeScript on React
+								framework.
+							</div>
+							<div className='skill-box px-4 text-center'>
+								Need a design? I can help mock something up in Adobe
+								Illustrator/ Photoshop. I can also whip up a simple logo
+							</div>
+							<div className='skill-box px-4 text-center'>
+								Worried about SEO and inbound marketing? I can help with that
+								too. I’ve had 5+ years experience as a Marketing Manager,
+								specialising in digital and social media.
+							</div>
+							<div className='skill-box px-4 text-center'>
+								Dealing with web hosts and domain names can be quite
+								frustrating. I’ve worked with many of them, and can offer
+								advice. I can also help with site migrations.
+							</div>
+							<div className='skill-box px-4 text-center'>
+								One of the best things you can do for SEO and for your marketing
+								is sharing content. I can help with copywriting and coming up
+								with social media optimised blog post ideas.
+							</div>
+							<div className='skill-box px-4 text-center'>
+								I love creating online stores! I work with both WooCommerce
+								(free) and Shopify (worth the monthly all-inclusive pricing) and
+								will optimise your store for success.
+							</div>
 						</div>
 					</div>
 				</>
