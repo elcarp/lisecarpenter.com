@@ -4,17 +4,7 @@ import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import Hero from './hero.js'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-	faGooglePlusSquare,
-	faShopify,
-	faWordpress,
-} from '@fortawesome/free-brands-svg-icons'
-import {
-	faFileCode,
-	faPaintBrush,
-	faServer,
-} from '@fortawesome/free-solid-svg-icons'
+import Skills from './skills'
 
 const name = 'Lise Carpenter'
 export const siteTitle =
@@ -78,67 +68,7 @@ export default function Layout({ children, home }) {
 								world.
 							</p>
 						</div>
-						<div className='w-full px-4 md:w-1/2 grid grid-cols-2'>
-							<div className='skill-box px-4 text-center'>
-								<FontAwesomeIcon
-									icon={faFileCode}
-									width={20}
-									className='mx-auto py-4'
-								/>
-								I can code your site from scratch if you’d like. I’m fluent in
-								HTML, CSS and pretty good with JavaScript/TypeScript on React
-								framework.
-							</div>
-							<div className='skill-box px-4 text-center'>
-								<FontAwesomeIcon
-									icon={faPaintBrush}
-									width={20}
-									className='mx-auto py-4'
-								/>
-								Need a design? I can help mock something up in Adobe
-								Illustrator/ Photoshop. I can also whip up a simple logo
-							</div>
-							<div className='skill-box px-4 text-center'>
-								<FontAwesomeIcon
-									icon={faGooglePlusSquare}
-									width={20}
-									className='mx-auto py-4'
-								/>
-								Worried about SEO and inbound marketing? I can help with that
-								too. I’ve had 5+ years experience as a Marketing Manager,
-								specialising in digital and social media.
-							</div>
-							<div className='skill-box px-4 text-center'>
-								<FontAwesomeIcon
-									icon={faServer}
-									width={20}
-									className='mx-auto py-4'
-								/>
-								Dealing with web hosts and domain names can be quite
-								frustrating. I’ve worked with many of them, and can offer
-								advice. I can also help with site migrations.
-							</div>
-							<div className='skill-box px-4 text-center'>
-								<FontAwesomeIcon
-									icon={faWordpress}
-									width={20}
-									className='mx-auto py-4'
-								/>
-								One of the best things you can do for SEO and for your marketing
-								is sharing content. I can help with copywriting and coming up
-								with social media optimised blog post ideas.
-							</div>
-							<div className='skill-box px-4 text-center'>
-								<FontAwesomeIcon
-									icon={faShopify}
-									width={20}
-									className='mx-auto py-4'
-								/>
-								I love creating online stores! I work with both WooCommerce
-								(free) and Shopify (worth the monthly all-inclusive pricing) and
-								will optimise your store for success.
-							</div>
-						</div>
+						<Skills />
 					</div>
 				</>
 			) : (
