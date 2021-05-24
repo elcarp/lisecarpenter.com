@@ -59,3 +59,13 @@ img {
     width: 100%;
     background-size: cover;
 }
+
+@media (max-width: 768px) {
+    .hero {
+        background-position: center;
+    }
+
+    .hero-content {
+        padding: 0 35px;
+    }
+}
