@@ -39,7 +39,8 @@ export default function Layout({ children, home }) {
 				<>
 					<Hero />
 					<div className='about-me w-full bg-grey py-20 text-white px-5 md:px-20 block md:flex'>
-						<div className='w-full md:w-1/2 px-4'>
+						<div className='overlay z-25 bg-black absolute w-full h-full opacity-50'></div>
+						<div className='w-full md:w-1/2 px-4 z-50'>
 							<h1 className={`${utilStyles.heading2Xl} pb-4`}>
 								Profile & Background
 							</h1>
@@ -69,6 +70,7 @@ export default function Layout({ children, home }) {
 							</p>
 						</div>
 						<Skills />
+						{/* <div className='tech-stack'>&nbsp;</div> */}
 					</div>
 				</>
 			) : (

@@ -60,6 +60,25 @@ img {
     background-attachment: fixed;
 }
 
+.about-me {
+    background-image: url('/images/ocean-background-min.jpeg');
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.animation-delay-25 {
+    animation-delay: .25s
+}
+
+.animation-delay-50 {
+    animation-delay: .5s
+}
+
+.animation-delay-75 {
+    animation-delay: .75s
+}
+
 @media (max-width: 768px) {
     .hero {
         background-position: center;
