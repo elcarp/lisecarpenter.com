@@ -40,7 +40,7 @@ export default function Layout({ children, home }) {
 				<>
 					<Hero />
 					<div className='about-me w-full bg-grey py-20 text-white block md:flex'>
-						<div className='overlay z-25 bg-black absolute w-full h-full opacity-50'></div>
+						<div className='overlay z-25 bg-black absolute w-full h-full opacity-50' />
 						<About />
 						<Skills />
 					</div>

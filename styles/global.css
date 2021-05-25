@@ -23,6 +23,11 @@
     a {
         @apply text-blue-600 underline;
     }
+
+    p,
+    span {
+        @apply text-sm;
+    }
 }
 
 html,

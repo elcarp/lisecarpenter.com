@@ -36,8 +36,10 @@ export default function Skills() {
 						isVisible ? 'animate-bounce animation-delay-25 transition' : ''
 					}`}
 				/>
-				I can code your site from scratch if you’d like. I’m fluent in HTML, CSS
-				and pretty good with JavaScript/TypeScript on React framework.
+				<p>
+					I can code your site from scratch if you’d like. I’m fluent in HTML,
+					CSS and pretty good with JavaScript/TypeScript on React framework.
+				</p>
 			</div>
 			<div ref={domRef} className='skill-box px-4 text-center'>
 				<FontAwesomeIcon
@@ -48,8 +50,10 @@ export default function Skills() {
 						isVisible ? 'animate-bounce animation-delay-25 transition' : ''
 					}`}
 				/>
-				Need a design? I can help mock something up in Adobe Illustrator/
-				Photoshop. I can also whip up a simple logo
+				<p>
+					Need a design? I can help mock something up in Adobe Illustrator/
+					Photoshop. I can also whip up a simple logo
+				</p>
 			</div>
 			<div ref={domRef} className='skill-box px-4 text-center'>
 				<FontAwesomeIcon
@@ -60,9 +64,11 @@ export default function Skills() {
 						isVisible ? 'animate-bounce animation-delay-50 transition' : ''
 					}`}
 				/>
-				Worried about SEO and inbound marketing? I can help with that too. I’ve
-				had 5+ years experience as a Marketing Manager, specialising in digital
-				and social media.
+				<p>
+					Worried about SEO and inbound marketing? I can help with that too.
+					I’ve had 5+ years experience as a Marketing Manager, specialising in
+					digital and social media.
+				</p>
 			</div>
 			<div ref={domRef} className='skill-box px-4 text-center'>
 				<FontAwesomeIcon
@@ -73,9 +79,11 @@ export default function Skills() {
 						isVisible ? 'animate-bounce animation-delay-50 transition' : ''
 					}`}
 				/>
-				Dealing with web hosts and domain names can be quite frustrating. I’ve
-				worked with many of them, and can offer advice. I can also help with
-				site migrations.
+				<p>
+					Dealing with web hosts and domain names can be quite frustrating. I’ve
+					worked with many of them, and can offer advice. I can also help with
+					site migrations.
+				</p>
 			</div>
 			<div ref={domRef} className='skill-box px-4 text-center'>
 				<FontAwesomeIcon
@@ -86,9 +94,11 @@ export default function Skills() {
 						isVisible ? 'animate-bounce animation-delay-75 transition' : ''
 					}`}
 				/>
-				One of the best things you can do for SEO and for your marketing is
-				sharing content. I can help with copywriting and coming up with social
-				media optimised blog post ideas.
+				<p>
+					One of the best things you can do for SEO and for your marketing is
+					sharing content. I can help with copywriting and coming up with social
+					media optimised blog post ideas.
+				</p>
 			</div>
 			<div ref={domRef} className='skill-box px-4 text-center'>
 				<FontAwesomeIcon
@@ -99,9 +109,11 @@ export default function Skills() {
 						isVisible ? 'animate-bounce animation-delay-75 transition' : ''
 					}`}
 				/>
-				I love creating online stores! I work with both WooCommerce (free) and
-				Shopify (worth the monthly all-inclusive pricing) and will optimise your
-				store for success.
+				<p>
+					I love creating online stores! I work with both WooCommerce (free) and
+					Shopify (worth the monthly all-inclusive pricing) and will optimise
+					your store for success.
+				</p>
 			</div>
 		</div>
 	)
