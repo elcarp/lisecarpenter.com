@@ -29,7 +29,7 @@ export default function Layout({ children, home }) {
 				<meta name='twitter:card' content='summary_large_image' />
 			</Head>
 			<header
-				className={`fixed w-full text-white z-50 justify-between flex justify-between p-4`}>
+				className={`fixed w-full text-white z-50 justify-between flex p-4`}>
 				<div className='logo flex justify-center items-center border border-aqua-blue rounded-full p-4'>
 					<h3 className='leading-none text-xl -mb-1 text-aqua-blue'>L</h3>
 				</div>
@@ -38,37 +38,9 @@ export default function Layout({ children, home }) {
 			{home ? (
 				<>
 					<Hero />
-					<div className='about-me w-full bg-grey py-20 text-white px-5 md:px-20 block md:flex'>
+					<div className='about-me w-full bg-grey py-20 text-white block md:flex'>
 						<div className='overlay z-25 bg-black absolute w-full h-full opacity-50'></div>
-						<div className='w-full md:w-1/2 px-4 z-50'>
-							<h1 className={`${utilStyles.heading2Xl} pb-4`}>
-								Profile & Background
-							</h1>
-							<Image
-								priority
-								src='/images/profile.jpg'
-								className={utilStyles.borderCircle}
-								height={144}
-								width={144}
-								alt={name}
-							/>
-							<p className='pt-4'>
-								I have a background in financial services, but my love of code
-								led me to work at a startup tech academy, where I re-sharpened
-								some skills and began completing web design and development
-								projects. I enjoy working with my clients to design and launch
-								simple, beautiful and mobile responsive websites and e-commerce
-								shops.
-							</p>
-							<h1 className={`${utilStyles.heading2Xl} pt-4`}>Etcetera</h1>
-							<p>
-								I’m American/Thai, based in Hong Kong and Bangkok since 6 years.
-								Most of the time, however, I work remotely. I speak English,
-								Thai and French. Passionate about practicing yoga (certified RYT
-								200 teacher – check out my yoga site here!) and traveling the
-								world.
-							</p>
-						</div>
+						<About />
 						<Skills />
 					</div>
 					<div className='tech-stack h-96 bg-grey pt-10'>
