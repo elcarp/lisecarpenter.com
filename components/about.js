@@ -1,6 +1,5 @@
 import utilStyles from '../styles/utils.module.css'
 import Image from 'next/image'
-const name = 'Lise Carpenter'
 
 export default function About() {
 	return (
@@ -12,7 +11,7 @@ export default function About() {
 				className={utilStyles.borderCircle}
 				height={144}
 				width={144}
-				alt={name}
+				alt='Lise Carpenter'
 			/>
 			<p className='pt-4'>
 				I have a background in financial services, but my love of code led me to

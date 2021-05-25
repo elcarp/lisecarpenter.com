@@ -39,9 +39,11 @@ export default function Layout({ children, home }) {
 			{home ? (
 				<>
 					<Hero />
-					<div className='about-me w-full bg-grey text-white block md:flex'>
-						<About />
-						<Skills />
+					<div className='about-me w-full text-white'>
+						<div className='about-overlay block md:flex'>
+							<About />
+							<Skills />
+						</div>
 					</div>
 					<div className='tech-stack h-96 bg-grey pt-10'>
 						<h1
