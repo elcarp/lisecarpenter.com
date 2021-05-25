@@ -1,6 +1,10 @@
+import utilStyles from '../styles/utils.module.css'
+import Image from 'next/image'
+const name = 'Lise Carpenter'
+
 export default function About() {
 	return (
-		<div className='w-full md:w-1/2 px-5 md:px-20 py-20 z-50'>
+		<div className='w-full md:w-1/2 px-5 md:pl-20 py-20 z-50'>
 			<h1 className={`${utilStyles.heading2Xl} pb-4`}>Profile & Background</h1>
 			<Image
 				priority

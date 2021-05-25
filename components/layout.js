@@ -5,6 +5,7 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import Hero from './hero.js'
 import Skills from './skills'
+import About from './about'
 
 const name = 'Lise Carpenter'
 export const siteTitle =

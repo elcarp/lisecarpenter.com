@@ -26,7 +26,7 @@ export default function Skills() {
 	}, [])
 
 	return (
-		<div className='skills w-full px-5 md:px-20 py-20 md:w-1/2 grid grid-cols-2 z-50'>
+		<div className='skills w-full px-5 md:pr-20 py-20 md:w-1/2 grid grid-cols-2 z-50'>
 			<div ref={domRef} className='skill-box px-4 text-center'>
 				<FontAwesomeIcon
 					color='#65cccc'
