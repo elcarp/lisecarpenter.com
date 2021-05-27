@@ -5,7 +5,7 @@ module.exports = {
 		extend: {
 			colors: {
 				'aqua-blue': '#65cccc',
-				grey: '#333333',
+				grey: '#222222',
 			},
 			keyframes: {
 				bounce: {

@@ -38,13 +38,7 @@ export default function Layout({ children, home }) {
 			{home ? (
 				<>
 					<Hero />
-					<div className='about-me w-full text-white'>
-						<div className='about-overlay block md:flex'>
-							<About />
-							<Skills />
-						</div>
-					</div>
-					<div className='tech-stack h-96 bg-grey pt-10'>
+					<div className='tech-stack bg-grey py-20'>
 						<h1
 							className={`${utilStyles.heading2Xl} pt-4 text-white text-center`}>
 							Tech that I like
@@ -53,6 +47,12 @@ export default function Layout({ children, home }) {
 							className={`${utilStyles.heading2Xl} pt-4 text-white text-center`}>
 							Other things that I like
 						</h1>
+					</div>
+					<div className='about-me w-full text-white'>
+						<div className='about-overlay block md:flex'>
+							<About />
+							<Skills />
+						</div>
 					</div>
 				</>
 			) : (
