@@ -34,7 +34,6 @@ export default function Layout({ children, home }) {
 				<div className='logo flex justify-center items-center border border-aqua-blue rounded-full p-4'>
 					<h3 className='leading-none text-xl -mb-1 text-aqua-blue'>L</h3>
 				</div>
-				<div> </div>
 			</header>
 			{home ? (
 				<>
@@ -48,7 +47,11 @@ export default function Layout({ children, home }) {
 					<div className='tech-stack h-96 bg-grey pt-10'>
 						<h1
 							className={`${utilStyles.heading2Xl} pt-4 text-white text-center`}>
-							Current Preferred Tech Stack
+							Tech that I like
+						</h1>
+						<h1
+							className={`${utilStyles.heading2Xl} pt-4 text-white text-center`}>
+							Other things that I like
 						</h1>
 					</div>
 				</>

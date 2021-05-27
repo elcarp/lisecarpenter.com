@@ -14,11 +14,13 @@ export default function About() {
 				alt='Lise Carpenter'
 			/>
 			<p className='pt-4'>
-				I have a background in financial services, but my love of code led me to
-				work at a startup tech academy, where I re-sharpened some skills and
-				began completing web design and development projects. I enjoy working
-				with my clients to design and launch simple, beautiful and mobile
-				responsive websites and e-commerce shops.
+				I started my career in financial services over a decade ago, but my love
+				of code led me to work at a startup tech academy. I learned some new
+				skills, and began completing web design and development projects on my
+				own. I'm currently working in fintech as a frontend web developer,
+				mostly coding react and elixir projects. On a freelance basis, I enjoy
+				working with my clients to design and launch simple, beautiful and
+				mobile responsive websites and e-commerce shops.
 			</p>
 			<h1 className={`${utilStyles.heading2Xl} pt-4`}>Etcetera</h1>
 			<p>

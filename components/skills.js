@@ -36,9 +36,12 @@ export default function Skills() {
 						isVisible ? 'animate-bounce animation-delay-25 transition' : ''
 					}`}
 				/>
-				<p>
-					I can code your site from scratch if you’d like. I’m fluent in HTML,
-					CSS and pretty good with JavaScript/TypeScript on React framework.
+				<h2>Coding</h2>
+				<p className='pt-2'>
+					I prefer coding JavaScript/TypeScript on React framework, but have
+					extensive experience working on sites on various CMS platorms
+					(Wordpress, Shopify, Webflow, etc.). Happy to discuss your project's
+					needs and recommend something based on my experience.
 				</p>
 			</div>
 			<div ref={domRef} className='skill-box px-4 text-center'>
@@ -50,9 +53,11 @@ export default function Skills() {
 						isVisible ? 'animate-bounce animation-delay-25 transition' : ''
 					}`}
 				/>
-				<p>
-					Need a design? I can help mock something up in Adobe Illustrator/
-					Photoshop. I can also whip up a simple logo
+				<h2>Design</h2>
+				<p className='pt-2'>
+					I can whip up simple designs, as well as share a number of designer
+					contacts I've worked closely with that I can recommend, depending on
+					your needs and budgetary requirements.
 				</p>
 			</div>
 			<div ref={domRef} className='skill-box px-4 text-center'>
@@ -64,7 +69,8 @@ export default function Skills() {
 						isVisible ? 'animate-bounce animation-delay-50 transition' : ''
 					}`}
 				/>
-				<p>
+				<h2>Inbound Marketing</h2>
+				<p className='pt-2'>
 					Worried about SEO and inbound marketing? I can help with that too.
 					I’ve had 5+ years experience as a Marketing Manager, specialising in
 					digital and social media.
@@ -79,10 +85,11 @@ export default function Skills() {
 						isVisible ? 'animate-bounce animation-delay-50 transition' : ''
 					}`}
 				/>
-				<p>
+				<h2>Webhosting</h2>
+				<p className='pt-2'>
 					Dealing with web hosts and domain names can be quite frustrating. I’ve
-					worked with many of them, and can offer advice. I can also help with
-					site migrations.
+					worked with many of them, and can offer advice. I can advise or manage
+					site migrations as needed.
 				</p>
 			</div>
 			<div ref={domRef} className='skill-box px-4 text-center'>
@@ -94,10 +101,11 @@ export default function Skills() {
 						isVisible ? 'animate-bounce animation-delay-75 transition' : ''
 					}`}
 				/>
-				<p>
+				<h2>Copywriting</h2>
+				<p className='pt-2'>
 					One of the best things you can do for SEO and for your marketing is
-					sharing content. I can help with copywriting and coming up with social
-					media optimised blog post ideas.
+					sharing content. I can offer copywriting ideas and coming up with
+					social media optimised blog post ideas.
 				</p>
 			</div>
 			<div ref={domRef} className='skill-box px-4 text-center'>
@@ -109,10 +117,10 @@ export default function Skills() {
 						isVisible ? 'animate-bounce animation-delay-75 transition' : ''
 					}`}
 				/>
-				<p>
-					I love creating online stores! I work with both WooCommerce (free) and
-					Shopify (worth the monthly all-inclusive pricing) and will optimise
-					your store for success.
+				<h2>E-Commerce</h2>
+				<p className='pt-2'>
+					I work with both WooCommerce (free) and Shopify (worth the monthly
+					all-inclusive pricing) and can help optimize your store for success.
 				</p>
 			</div>
 		</div>
