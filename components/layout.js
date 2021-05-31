@@ -6,6 +6,7 @@ import Link from 'next/link'
 import Hero from './hero.js'
 import Skills from './skills'
 import About from './about'
+import Tech from './tech'
 
 const name = 'Lise Carpenter'
 export const siteTitle =
@@ -38,16 +39,7 @@ export default function Layout({ children, home }) {
 			{home ? (
 				<>
 					<Hero />
-					<div className='tech-stack bg-grey py-20'>
-						<h1
-							className={`${utilStyles.heading2Xl} pt-4 text-white text-center`}>
-							Tech that I like
-						</h1>
-						<h1
-							className={`${utilStyles.heading2Xl} pt-4 text-white text-center`}>
-							Other things that I like
-						</h1>
-					</div>
+					<Tech />
 					<div className='about-me w-full text-white'>
 						<div className='about-overlay block md:flex'>
 							<About />

@@ -6,7 +6,7 @@ import {
 	faWordpress,
 } from '@fortawesome/free-brands-svg-icons'
 import {
-	faFileCode,
+	faCode,
 	faPaintBrush,
 	faServer,
 } from '@fortawesome/free-solid-svg-icons'
@@ -30,7 +30,7 @@ export default function Skills() {
 			<div ref={domRef} className='skill-box px-4 text-center'>
 				<FontAwesomeIcon
 					color='#65cccc'
-					icon={faFileCode}
+					icon={faCode}
 					width={20}
 					className={`mx-auto pt-6 pb-4 ${
 						isVisible ? 'animate-bounce animation-delay-25 transition' : ''
