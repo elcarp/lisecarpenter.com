@@ -5,10 +5,9 @@ import {
 	faCss3,
 	faHtml5,
 	faJs,
-	faMedium,
 	faReact,
 } from '@fortawesome/free-brands-svg-icons'
-import { faBook, faCat, faOm } from '@fortawesome/free-solid-svg-icons'
+import { faBook, faCat, faOm, faPizzaSlice} from '@fortawesome/free-solid-svg-icons'
 
 export default function Tech() {
 	const [isVisible] = useState(true)
@@ -58,7 +57,7 @@ export default function Tech() {
 			<div className='flex w-1/4 mx-auto'>
 				<FontAwesomeIcon
 					color='#65cccc'
-					icon={faMedium}
+					icon={faPizzaSlice}
 					width={20}
 					className={`mx-auto pt-6 pb-4 ${
 						isVisible ? 'animate-bounce animation-delay-50 transition' : ''
