@@ -55,9 +55,9 @@ export default function Skills() {
 				/>
 				<h2>Design</h2>
 				<p className='pt-2'>
-					I can whip up simple designs, as well as share a number of designer
-					contacts I've worked closely with that I can recommend, depending on
-					your needs and budgetary requirements.
+					While I can whip up simple designs, I'm also able to recommend a
+					number of designer contacts with whom I've worked closely, depending
+					on your needs and budgetary requirements.
 				</p>
 			</div>
 			<div ref={domRef} className='skill-box px-4 text-center'>
@@ -71,9 +71,10 @@ export default function Skills() {
 				/>
 				<h2>Inbound Marketing</h2>
 				<p className='pt-2'>
-					Worried about SEO and inbound marketing? I can help with that too.
 					I’ve had 5+ years experience as a Marketing Manager, specialising in
-					digital and social media.
+					digital and social media. While I don't do any freelance marketing
+					work, I can help set you with good practices for SEO and inbound
+					marketing.
 				</p>
 			</div>
 			<div ref={domRef} className='skill-box px-4 text-center'>
@@ -103,8 +104,8 @@ export default function Skills() {
 				/>
 				<h2>Copywriting</h2>
 				<p className='pt-2'>
-					One of the best things you can do for SEO and for your marketing is
-					sharing content. I can offer copywriting ideas and coming up with
+					One of the best things you can do for SEO, and for your marketing, is
+					sharing content. I can offer copywriting ideas and help come up with
 					social media optimised blog post ideas.
 				</p>
 			</div>

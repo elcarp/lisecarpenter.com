@@ -10,9 +10,7 @@ export default function Hero() {
 					speed={100}
 					typingDelay={100}
 					className='tracking-widest text-sm text-aqua-blue'
-					text={[
-						'function showSubTitle() { (<>"Your friend who likes to code"</>) }',
-					]}
+					text={['{`${Your friend who likes to code}`}']}
 				/>
 			</div>
 		</div>
