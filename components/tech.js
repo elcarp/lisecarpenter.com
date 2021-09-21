@@ -1,4 +1,5 @@
 import utilStyles from '../styles/utils.module.css'
+import React, { useState, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
 	faReact,
@@ -7,6 +8,8 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 
 export default function Tech() {
+	const [isVisible, setVisible] = useState(true)
+
 	return (
 		<div className='tech-stack bg-grey py-20'>
 			<h1 className={`${utilStyles.heading2Xl} pt-4 text-white text-center`}>
