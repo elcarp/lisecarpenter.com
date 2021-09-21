@@ -87,13 +87,13 @@ export default function Tech() {
 					className={`pt-6 pb-4 ${
 						isVisible ? 'animate-bounce animation-delay-50 transition' : ''
 					}`}>
-					<Image
+					{/* <Image
 						priority
 						src='/images/yoga.svg'
 						height={40}
 						width={40}
 						alt='yoga'
-					/>
+					/> */}
 				</div>
 			</div>
 		</div>
