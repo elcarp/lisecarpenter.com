@@ -1,6 +1,5 @@
 import utilStyles from '../styles/utils.module.css'
 import React, { useState } from 'react'
-import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
 	faCss3,
@@ -8,10 +7,8 @@ import {
 	faJs,
 	faMedium,
 	faReact,
-	faShopify,
-	faWordpress,
 } from '@fortawesome/free-brands-svg-icons'
-import { faBook, faCat } from '@fortawesome/free-solid-svg-icons'
+import { faBook, faCat, faOm } from '@fortawesome/free-solid-svg-icons'
 
 export default function Tech() {
 	const [isVisible] = useState(true)
@@ -83,18 +80,14 @@ export default function Tech() {
 						isVisible ? 'animate-bounce animation-delay-50 transition' : ''
 					}`}
 				/>
-				<div
-					className={`pt-6 pb-4 ${
+				<FontAwesomeIcon
+					color='#65cccc'
+					icon={faOm}
+					width={20}
+					className={`mx-auto pt-6 pb-4 ${
 						isVisible ? 'animate-bounce animation-delay-50 transition' : ''
-					}`}>
-					{/* <Image
-						priority
-						src='/images/yoga.svg'
-						height={40}
-						width={40}
-						alt='yoga'
-					/> */}
-				</div>
+					}`}
+				/>
 			</div>
 		</div>
 	)
