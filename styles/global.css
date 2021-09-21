@@ -116,4 +116,8 @@ img {
     .overlay {
         height: 65vh;
     }
+
+    .about-me {
+        background-attachment: unset;
+    }
 }
