@@ -82,7 +82,7 @@ export default function Layout({ children, home }) {
 			<p className='w-1/2 mx-auto text-white text-center'>
 				Set up a time for us to speak using a widget below.
 			</p>
-			<p className='w-1/2 mx-auto text-white text-center'>
+			<p className='w-1/2 mx-auto text-white text-center pb-10'>
 				Are we in different timezones? Please feel free to email me at
 				<strong className='underline'> lise.carpenter@gmail.com</strong>
 			</p>

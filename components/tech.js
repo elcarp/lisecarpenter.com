@@ -7,7 +7,12 @@ import {
 	faJs,
 	faReact,
 } from '@fortawesome/free-brands-svg-icons'
-import { faBook, faCat, faOm, faPizzaSlice} from '@fortawesome/free-solid-svg-icons'
+import {
+	faBook,
+	faCat,
+	faOm,
+	faPizzaSlice,
+} from '@fortawesome/free-solid-svg-icons'
 
 export default function Tech() {
 	const [isVisible] = useState(true)
@@ -17,7 +22,7 @@ export default function Tech() {
 			<h1 className={`${utilStyles.heading2Xl} pt-4 text-white text-center`}>
 				Tech that I like
 			</h1>
-			<div className='flex w-1/4 mx-auto'>
+			<div className='flex w-1/2 md:w-1/4 mx-auto'>
 				<FontAwesomeIcon
 					color='#65cccc'
 					icon={faCss3}
@@ -54,7 +59,7 @@ export default function Tech() {
 			<h1 className={`${utilStyles.heading2Xl} pt-4 text-white text-center`}>
 				Other things that I like
 			</h1>
-			<div className='flex w-1/4 mx-auto'>
+			<div className='flex w-1/2 md:w-1/4 mx-auto'>
 				<FontAwesomeIcon
 					color='#65cccc'
 					icon={faPizzaSlice}
