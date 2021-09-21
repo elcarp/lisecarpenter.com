@@ -73,7 +73,7 @@ export default function Skills() {
 				<p className='pt-2'>
 					I’ve had 5+ years experience as a Marketing Manager, specialising in
 					digital and social media. While I don't do any freelance marketing
-					work, I can help set you with good practices for SEO and inbound
+					work, I can set you up with good practices for SEO and inbound
 					marketing.
 				</p>
 			</div>
