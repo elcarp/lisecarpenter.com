@@ -11,6 +11,7 @@ import {
 	faShopify,
 	faWordpress,
 } from '@fortawesome/free-brands-svg-icons'
+import { faBook, faCat } from '@fortawesome/free-solid-svg-icons'
 
 export default function Tech() {
 	const [isVisible] = useState(true)
@@ -21,22 +22,6 @@ export default function Tech() {
 				Tech that I like
 			</h1>
 			<div className='flex w-1/4 mx-auto'>
-				<FontAwesomeIcon
-					color='#65cccc'
-					icon={faWordpress}
-					width={20}
-					className={`mx-auto pt-6 pb-4 ${
-						isVisible ? 'animate-bounce animation-delay-50 transition' : ''
-					}`}
-				/>
-				<FontAwesomeIcon
-					color='#65cccc'
-					icon={faShopify}
-					width={20}
-					className={`mx-auto pt-6 pb-4 ${
-						isVisible ? 'animate-bounce animation-delay-50 transition' : ''
-					}`}
-				/>
 				<FontAwesomeIcon
 					color='#65cccc'
 					icon={faCss3}
@@ -82,16 +67,34 @@ export default function Tech() {
 						isVisible ? 'animate-bounce animation-delay-50 transition' : ''
 					}`}
 				/>
-				<Image
-					priority
-					src='/images/yoga.svg'
-					height={35}
-					width={35}
-					alt='yoga'
+				<FontAwesomeIcon
+					color='#65cccc'
+					icon={faCat}
+					width={20}
 					className={`mx-auto pt-6 pb-4 ${
 						isVisible ? 'animate-bounce animation-delay-50 transition' : ''
 					}`}
 				/>
+				<FontAwesomeIcon
+					color='#65cccc'
+					icon={faBook}
+					width={20}
+					className={`mx-auto pt-6 pb-4 ${
+						isVisible ? 'animate-bounce animation-delay-50 transition' : ''
+					}`}
+				/>
+				<div
+					className={`pt-6 pb-4 ${
+						isVisible ? 'animate-bounce animation-delay-50 transition' : ''
+					}`}>
+					<Image
+						priority
+						src='/images/yoga.svg'
+						height={40}
+						width={40}
+						alt='yoga'
+					/>
+				</div>
 			</div>
 		</div>
 	)
