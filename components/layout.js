@@ -7,6 +7,7 @@ import Hero from './hero.js'
 import Skills from './skills'
 import About from './about'
 import Tech from './tech'
+import { InlineWidget } from 'react-calendly'
 
 const name = 'Lise Carpenter'
 export const siteTitle =
@@ -77,6 +78,15 @@ export default function Layout({ children, home }) {
 					</Link>
 				</div>
 			)}
+			<h1 className='text-white pt-20 pb-4 text-center'>Let's chat!</h1>
+			<p className='w-1/2 mx-auto text-white text-center'>
+				Set up a time for us to speak using a widget below.
+			</p>
+			<p className='w-1/2 mx-auto text-white text-center'>
+				Are we in different timezones? Please feel free to email me at
+				<strong className='underline'> lise.carpenter@gmail.com</strong>
+			</p>
+			<InlineWidget url='https://calendly.com/lise-carpenter' />
 		</div>
 	)
 }
