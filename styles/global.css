@@ -103,3 +103,17 @@ img {
         padding: 0 35px;
     }
 }
+
+@media (max-width: 569px) {
+    .hero {
+        background-size: contain !important;
+        background-repeat: no-repeat;
+        height: 65vh;
+        background-position: bottom;
+        background-attachment: unset;
+    }
+
+    .overlay {
+        height: 65vh;
+    }
+}
