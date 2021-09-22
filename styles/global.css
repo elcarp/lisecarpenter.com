@@ -94,6 +94,61 @@ img {
     animation-delay: .75s
 }
 
+button.btn.shiny {
+    display: block;
+    margin-top: 1rem;
+    width: 200px;
+    text-align: center;
+    color: #fff;
+    background: #65cccc;
+    padding: .5rem;
+    border-radius: 2rem;
+    border: 1px solid #65cccc;
+    transition: all .2s ease;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+button.btn.shiny:before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: #fff;
+    animation: shiny-btn1 3s ease-in-out infinite;
+}
+
+@-webkit-keyframes shiny-btn1 {
+    0% {
+        -webkit-transform: scale(0) rotate(45deg);
+        opacity: 0;
+    }
+
+    80% {
+        -webkit-transform: scale(0) rotate(45deg);
+        opacity: 0.5;
+    }
+
+    81% {
+        -webkit-transform: scale(4) rotate(45deg);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scale(50) rotate(45deg);
+        opacity: 0;
+    }
+}
+
+a.btn.shiny:hover {
+    background: transparent;
+    color: #65cccc;
+}
+
 @media (max-width: 768px) {
     .hero {
         background-position: center;
