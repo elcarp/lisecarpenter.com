@@ -2,7 +2,12 @@ import ReactTypingEffect from 'react-typing-effect'
 import { openPopupWidget } from 'react-calendly'
 
 export default function Hero() {
-	const CustomButton = ({ url, prefill, pageSettings, utm }) => {
+	const CustomButton = ({
+		url = 'https://calendly.com/lise-carpenter',
+		prefill,
+		pageSettings,
+		utm,
+	}) => {
 		const onClick = () => openPopupWidget({ url, prefill, pageSettings, utm })
 
 		return (
@@ -22,7 +27,7 @@ export default function Hero() {
 					className='tracking-widest text-sm text-aqua-blue'
 					text={['{`${"Your friend who likes to code"}`} 😊']}
 				/>
-				<CustomButton/>
+				<CustomButton />
 				{/* <a class='btn shiny'>Let's Chat</a> */}
 			</div>
 		</div>
