@@ -109,6 +109,11 @@ button.btn.shiny {
     position: relative;
 }
 
+button.btn.shiny:hover {
+    background: transparent;
+    color: #65cccc;
+}
+
 button.btn.shiny:focus,
 button.btn.shiny:active {
     outline: none;
