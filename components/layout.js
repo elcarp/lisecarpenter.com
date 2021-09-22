@@ -86,7 +86,7 @@ export default function Layout({ children, home }) {
 				Are we in different timezones? Please feel free to email me at
 				<strong className='underline'> lise.carpenter@gmail.com</strong>
 			</p>
-			<InlineWidget url='https://calendly.com/lise-carpenter' />
+			<InlineWidget url='https://calendly.com/lise-carpenter' width={300} />
 		</div>
 	)
 }
