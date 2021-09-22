@@ -110,6 +110,11 @@ button.btn.shiny {
     position: relative;
 }
 
+button.btn.shiny:focus,
+button.btn.shiny:active {
+    outline: none;
+}
+
 button.btn.shiny:before {
     position: absolute;
     content: '';
