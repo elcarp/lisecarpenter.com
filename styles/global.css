@@ -101,7 +101,7 @@ button.btn.shiny {
     color: #fff;
     background: #65cccc;
     padding: .5rem;
-    border-radius: 2rem;
+    border-radius: .25rem;
     border: 1px solid #65cccc;
     transition: all .2s ease;
     overflow: hidden;
