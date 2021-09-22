@@ -172,13 +172,13 @@ a.btn.shiny:hover {
     .hero {
         background-size: contain !important;
         background-repeat: no-repeat;
-        height: 65vh;
+        height: 80vh;
         background-position: bottom;
         background-attachment: unset;
     }
 
     .overlay {
-        height: 65vh;
+        height: 80vh;
     }
 
     .about-me {
