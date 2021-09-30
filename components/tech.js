@@ -22,12 +22,12 @@ export default function Tech() {
 			<h1 className={`${utilStyles.heading2Xl} pt-4 text-white text-center`}>
 				Tech that I like
 			</h1>
-			<div className='flex w-1/2 md:w-1/4 mx-auto'>
+			<div className='w-3/4 md:w-1/4 mx-auto text-center'>
 				<FontAwesomeIcon
 					color='#65cccc'
 					icon={faCss3}
 					width={20}
-					className={`mx-auto pt-6 pb-4 ${
+					className={`inline-block mx-3 pt-6 pb-4 ${
 						isVisible ? 'animate-bounce animation-delay-50 transition' : ''
 					}`}
 				/>
@@ -35,7 +35,7 @@ export default function Tech() {
 					color='#65cccc'
 					icon={faReact}
 					width={20}
-					className={`mx-auto pt-6 pb-4 ${
+					className={`inline-block mx-3 pt-6 pb-4 ${
 						isVisible ? 'animate-bounce animation-delay-50 transition' : ''
 					}`}
 				/>
@@ -43,7 +43,7 @@ export default function Tech() {
 					color='#65cccc'
 					icon={faHtml5}
 					width={20}
-					className={`mx-auto pt-6 pb-4 ${
+					className={`inline-block mx-3 pt-6 pb-4 ${
 						isVisible ? 'animate-bounce animation-delay-50 transition' : ''
 					}`}
 				/>
@@ -51,7 +51,7 @@ export default function Tech() {
 					color='#65cccc'
 					icon={faJs}
 					width={20}
-					className={`mx-auto pt-6 pb-4 ${
+					className={`inline-block mx-3 pt-6 pb-4 ${
 						isVisible ? 'animate-bounce animation-delay-50 transition' : ''
 					}`}
 				/>
@@ -59,12 +59,12 @@ export default function Tech() {
 			<h1 className={`${utilStyles.heading2Xl} pt-4 text-white text-center`}>
 				Other things that I like
 			</h1>
-			<div className='flex w-1/2 md:w-1/4 mx-auto'>
+			<div className='w-3/4 md:w-1/4 mx-auto text-center'>
 				<FontAwesomeIcon
 					color='#65cccc'
 					icon={faPizzaSlice}
 					width={20}
-					className={`mx-auto pt-6 pb-4 ${
+					className={`inline-block mx-3 pt-6 pb-4 ${
 						isVisible ? 'animate-bounce animation-delay-50 transition' : ''
 					}`}
 				/>
@@ -72,7 +72,7 @@ export default function Tech() {
 					color='#65cccc'
 					icon={faCat}
 					width={20}
-					className={`mx-auto pt-6 pb-4 ${
+					className={`inline-block mx-3 pt-6 pb-4 ${
 						isVisible ? 'animate-bounce animation-delay-50 transition' : ''
 					}`}
 				/>
@@ -80,7 +80,7 @@ export default function Tech() {
 					color='#65cccc'
 					icon={faBook}
 					width={20}
-					className={`mx-auto pt-6 pb-4 ${
+					className={`inline-block mx-3 pt-6 pb-4 ${
 						isVisible ? 'animate-bounce animation-delay-50 transition' : ''
 					}`}
 				/>
@@ -88,7 +88,7 @@ export default function Tech() {
 					color='#65cccc'
 					icon={faOm}
 					width={20}
-					className={`mx-auto pt-6 pb-4 ${
+					className={`inline-block mx-3 pt-6 pb-4 ${
 						isVisible ? 'animate-bounce animation-delay-50 transition' : ''
 					}`}
 				/>
