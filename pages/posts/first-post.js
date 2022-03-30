@@ -8,12 +8,13 @@ export default function FirstPost() {
 		<>
 			<Layout>
 				<Head>
-					<title>First Post</title>
+					<title>TEST</title>
+					<meta property='og:title' content='My page title' key='title' />
 				</Head>
 				<h1>First Post</h1>
 				<h2>
 					<Link href='/'>
-						<a>Back to home</a>
+						<a>Back to home!</a>
 					</Link>
 				</h2>
 			</Layout>

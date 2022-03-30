@@ -20,9 +20,11 @@ export default function Home({ allPostsData }) {
 
 			{/* Add this <section> tag below the existing <section> tag */}
 			<section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-				<h2 className={utilStyles.headingLg}>Blog</h2>
+				<h2 className={`${utilStyles.headingLg} text-white text-center`}>
+					Blog
+				</h2>
 
-				<ul className={utilStyles.list}>
+				<ul className={`${utilStyles.list} text-white text-center`}>
 					{allPostsData.map(({ id, date, title }) => (
 						<Link href={`posts/${id.slice(0, -3)}`}>
 							<li

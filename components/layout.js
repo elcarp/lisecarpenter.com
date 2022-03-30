@@ -71,7 +71,7 @@ export default function Layout({ children, home }) {
 				</>
 			)}
 			{/* hiding blog posts for now */}
-			{/* <main>{children}</main> */}
+			<main>{children}</main>
 			{!home && (
 				<div className={styles.backToHome}>
 					<Link href='/'>

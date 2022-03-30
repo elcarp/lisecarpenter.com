@@ -15,15 +15,15 @@ export default function Skills() {
 	const [isVisible, setVisible] = useState(true)
 	const domRef = React.useRef()
 
-	useEffect(() => {
-		const observer = new IntersectionObserver((entries) => {
-			entries.forEach((entry) => setVisible(entry.isIntersecting))
-		})
+	// useEffect(() => {
+	// 	const observer = new IntersectionObserver((entries) => {
+	// 		entries.forEach((entry) => setVisible(entry.isIntersecting))
+	// 	})
 
-		observer.observe(domRef.current)
+	// 	observer.observe(domRef.current)
 
-		return () => observer.unobserve(domRef.current)
-	}, [])
+	// 	return () => observer.unobserve(domRef.current)
+	// }, [])
 
 	return (
 		<div className='skills w-full px-5 md:pr-20 py-20 md:w-1/2 block md:grid md:grid-cols-2 z-50'>
