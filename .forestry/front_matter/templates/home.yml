@@ -8,4 +8,5 @@ fields:
     required: false
   label: test
 pages:
+- posts/newpost.js.md
 - posts/test.md
