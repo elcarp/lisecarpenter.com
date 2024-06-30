@@ -3,7 +3,6 @@ import { TypeAnimation } from 'react-type-animation'
 
 const Hero: FunctionComponent<any> = () => {
   return (
-    
     <div className='hero flex items-center h-full'>
       <div className='overlay z-25 bg-black absolute w-full h-full opacity-50'></div>
       <div className='hero-content z-50 text-white md:pl-20 w-full absolute'>
@@ -26,9 +25,11 @@ const Hero: FunctionComponent<any> = () => {
             repeat={Infinity}
           />
         </div>
-        <button className='bg-aqua-blue px-4 py-2 rounded-lg border border-aqua-blue hover:bg-transparent hover:text-aqua-blue animate-pulse'>
+        <a
+          href='#contact'
+          className='bg-aqua-blue visited:text-white text-white hover:no-underline px-4 py-2 rounded-lg border border-aqua-blue hover:bg-transparent hover:text-aqua-blue animate-pulse'>
           Let's chat
-        </button>
+        </a>
       </div>
     </div>
   )

@@ -42,7 +42,7 @@ const Home: NextPage = () => {
           </div>
         </div>
       </section>
-      <section className='pb-20'>
+      <section className='pb-20' id='contact'>
         <h1 className='text-white pt-20 pb-4 text-center'>Let's chat!</h1>
         <div className='w-1/3 mx-auto text-center'>
           <form
