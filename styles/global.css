@@ -44,7 +44,9 @@ body {
 ::selection {
     background: #65cccc;
 }
-
+html { 
+    scroll-behavior: smooth;
+}
 * {
     box-sizing: border-box;
 }
