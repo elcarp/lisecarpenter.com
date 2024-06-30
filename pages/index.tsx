@@ -44,7 +44,7 @@ const Home: NextPage = () => {
       </section>
       <section className='pb-20' id='contact'>
         <h1 className='text-white pt-20 pb-4 text-center'>Let's chat!</h1>
-        <div className='w-1/3 mx-auto text-center'>
+        <div className='w-full lg:w-1/3 px-5 mx-auto text-center'>
           <form
             action='https://public.herotofu.com/v1/8e2e9d80-36a8-11ef-b65d-f35c9518deb4'
             method='post'
