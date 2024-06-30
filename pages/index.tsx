@@ -1,21 +1,9 @@
-import utilStyles from '../styles/utils.module.css'
-import { getSortedPostsData } from '../lib/posts'
-import Link from 'next/link'
 import { NextPage } from 'next'
 import Hero from '~components/hero'
 import Tech from '~components/tech'
 import Head from 'next/head'
 import About from '~components/about'
 import Skills from '~components/skills'
-
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData()
-  return {
-    props: {
-      allPostsData,
-    },
-  }
-}
 
 const name = 'Lise Carpenter'
 export const siteTitle =
