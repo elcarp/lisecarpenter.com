@@ -4,6 +4,7 @@ import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import { NextPage } from 'next'
 import Hero from '~components/hero'
+import Tech from '~components/tech'
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
@@ -17,9 +18,14 @@ export async function getStaticProps() {
 const Home: NextPage = () => {
   {
     return (
-      <section>
-        <Hero />
-      </section>
+      <>
+        <section>
+          <Hero />
+        </section>
+        <section>
+          <Tech />
+        </section>
+      </>
     )
   }
 }
