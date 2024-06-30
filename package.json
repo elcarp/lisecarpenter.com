@@ -3,26 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "tinacms dev -c \"next dev\"",
-    "build": "tinacms build && next build",
-    "start": "tinacms build && next start"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
-    "@tinacms/cli": "^1.5.16",
     "gray-matter": "^4.0.3",
     "next": "^13.1.6",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^6.7.0",
     "react": "^18.2.0",
-    "react-calendly": "^2.2.2",
     "react-dom": "^18.2.0",
     "react-type-animation": "^3.2.0",
     "sass": "^1.32.13",
-    "tinacms": "^1.5.8",
     "typescript": "^5.5.2"
   },
   "devDependencies": {
