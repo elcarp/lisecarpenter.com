@@ -20,7 +20,7 @@ const Tech: FunctionComponent = () => {
       <h1 className={`${utilStyles.heading2Xl} pt-4 text-white text-center`}>
         Tech that I like
       </h1>
-      <div className='w-full md:w-1/4 mx-auto text-center'>
+      <div className='w-full md:w-1/4 mx-auto text-center flex justify-center'>
         <FontAwesomeIcon
           color='#65cccc'
           icon={faCss3}
@@ -49,7 +49,7 @@ const Tech: FunctionComponent = () => {
       <h1 className={`${utilStyles.heading2Xl} pt-4 text-white text-center`}>
         Other things that I like
       </h1>
-      <div className='w-3/4 md:w-1/4 mx-auto text-center'>
+      <div className='w-3/4 md:w-1/4 mx-auto text-center flex justify-center'>
         <FontAwesomeIcon
           color='#65cccc'
           icon={faPizzaSlice}
