@@ -5,9 +5,8 @@ import Head from 'next/head'
 import About from '~components/about'
 import Skills from '~components/skills'
 
-const name = 'Lise Carpenter'
 export const siteTitle =
-  'Lise Carpenter - Freelance Web Developer Hong Kong, Bangkok'
+  'Lise Carpenter - Freelance Web Developer & Designer | React, Shopify, WordPress in Hong Kong, Bangkok'
 
 const Home: NextPage = () => {
   return (
@@ -30,7 +29,7 @@ const Home: NextPage = () => {
         <link rel='icon' href='/lc-favicon.png' />
         <meta
           name='description'
-          content='Learn how to build a personal website using Next.js'
+          content="Freelance web developer & designer with fintech and startup experience. Specializing in React, JavaScript, Shopify, and WordPress. I create mobile-friendly, SEO-optimized websites and e-commerce stores. Let's discuss your project today!"
         />
         <meta
           property='og:image'
@@ -109,8 +108,8 @@ const Home: NextPage = () => {
                 <input
                   type='text'
                   name='_gotcha'
-                  // tabindekx='-1'
-                  // autocomplete='off'
+                  tabIndex={-1}
+                  autoComplete='off'
                 />
               </div>
             </div>
