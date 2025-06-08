@@ -1,8 +1,17 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-	purge: [],
+	content: [
+		'./pages/**/*.{js,ts,jsx,tsx}',
+		'./components/**/*.{js,ts,jsx,tsx}',
+	],
 	darkMode: false, // or 'media' or 'class'
 	theme: {
 		extend: {
+			fontFamily: {
+				sacramento: ['var(--font-sacramento)'],
+				prompt: ['var(--font-prompt)'],
+				poppins: ['var(--font-poppins)'],
+			},
 			colors: {
 				'aqua-blue': '#65cccc',
 				grey: '#222222',
