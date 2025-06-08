@@ -24,25 +24,25 @@ const Tech: FunctionComponent = () => {
         <FontAwesomeIcon
           color='#65cccc'
           icon={faCss3}
-          width={20}
+          size="lg"
           className={`animate-bounce animation-delay-50 transition mx-5`}
         />
         <FontAwesomeIcon
           color='#65cccc'
           icon={faReact}
-          width={20}
+          size="lg"
           className={`animate-bounce animation-delay-50 transition mx-5`}
         />
         <FontAwesomeIcon
           color='#65cccc'
           icon={faHtml5}
-          width={20}
+          size="lg"
           className={`animate-bounce animation-delay-50 transition mx-5`}
         />
         <FontAwesomeIcon
           color='#65cccc'
           icon={faJs}
-          width={20}
+          size="lg"
           className={`animate-bounce animation-delay-50 transition mx-5`}
         />
       </div>
@@ -53,25 +53,25 @@ const Tech: FunctionComponent = () => {
         <FontAwesomeIcon
           color='#65cccc'
           icon={faPizzaSlice}
-          width={20}
+          size="lg"
           className={`animate-bounce animation-delay-50 transition mx-5`}
         />
         <FontAwesomeIcon
           color='#65cccc'
           icon={faCat}
-          width={20}
+          size="lg"
           className={`animate-bounce animation-delay-50 transition mx-5`}
         />
         <FontAwesomeIcon
           color='#65cccc'
           icon={faBook}
-          width={20}
+          size="lg"
           className={`animate-bounce animation-delay-50 transition mx-5`}
         />
         <FontAwesomeIcon
           color='#65cccc'
           icon={faOm}
-          width={20}
+          size="lg"
           className={`animate-bounce animation-delay-50 transition mx-5`}
         />
       </div>
