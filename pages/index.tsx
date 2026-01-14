@@ -142,6 +142,28 @@ const Home: NextPage = () => {
                 </div>
               </div>
             </form>
+            <div className='mt-8 pt-6 border-t border-zinc-800'>
+              <p className='text-gray-500 text-sm mb-3'>
+                Wait, I need to think this through first...
+              </p>
+              <a
+                href='/intake'
+                className='text-aqua-blue hover:text-white transition-colors text-sm inline-flex items-center gap-2 group'>
+                Take me to the website questionnaire
+                <svg
+                  className='w-4 h-4 group-hover:translate-x-1 transition-transform'
+                  fill='none'
+                  stroke='currentColor'
+                  viewBox='0 0 24 24'>
+                  <path
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    strokeWidth={2}
+                    d='M14 5l7 7m0 0l-7 7m7-7H3'
+                  />
+                </svg>
+              </a>
+            </div>
           </div>
         </section>
       </main>
