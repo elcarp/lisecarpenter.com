@@ -4,6 +4,7 @@ import Hero from '@/components/hero'
 import Tech from '@/components/tech'
 import About from '@/components/about'
 import Skills from '@/components/skills'
+import Work from '@/components/work'
 
 export const siteTitle =
   'Lise Carpenter - Web Developer & Designer | Websites That Grow Your Business'
@@ -78,6 +79,9 @@ const Home: NextPage = () => {
               <Skills />
             </div>
           </div>
+        </section>
+        <section>
+          <Work />
         </section>
         <section className='pb-20' id='contact'>
           <h1 className='text-white pt-20 pb-4 text-center'>Ready to grow your business online?</h1>
