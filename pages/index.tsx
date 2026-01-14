@@ -1,55 +1,70 @@
 import { NextPage } from 'next'
 import Head from 'next/head'
-import { Sacramento, Prompt, Poppins } from 'next/font/google'
 import Hero from '@/components/hero'
 import Tech from '@/components/tech'
 import About from '@/components/about'
 import Skills from '@/components/skills'
 
-const sacramento = Sacramento({
-  weight: '400',
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-sacramento',
-})
-
-const prompt = Prompt({
-  weight: ['200', '300', '400', '500', '600', '700', '800'],
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-prompt',
-})
-
-const poppins = Poppins({
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-poppins',
-})
-
 export const siteTitle =
   'Lise Carpenter - Freelance Web Developer & Designer | React, Shopify, WordPress in Hong Kong, Bangkok'
+
+const siteDescription =
+  "Freelance web developer & designer with fintech and startup experience. Specializing in React, JavaScript, Shopify, and WordPress. I create mobile-friendly, SEO-optimized websites and e-commerce stores. Let's discuss your project today!"
+
+const siteUrl = 'https://lisecarpenter.com'
+const ogImage = `${siteUrl}/og-image.png`
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Lise Carpenter',
+  url: siteUrl,
+  jobTitle: 'Freelance Web Developer & Designer',
+  description: siteDescription,
+  knowsAbout: ['React', 'JavaScript', 'Shopify', 'WordPress', 'Web Development', 'Web Design'],
+  sameAs: [
+    // Add your social media URLs here
+    // 'https://linkedin.com/in/yourprofile',
+    // 'https://github.com/yourprofile',
+  ],
+}
 
 const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <link rel='icon' href='/lc-favicon.png' />
-        <meta
-          name='description'
-          content="Freelance web developer & designer with fintech and startup experience. Specializing in React, JavaScript, Shopify, and WordPress. I create mobile-friendly, SEO-optimized websites and e-commerce stores. Let's discuss your project today!"
-        />
-        <meta
-          property='og:image'
-          content={`https://og-image.vercel.app/${encodeURI(
-            siteTitle
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-        />
+        {/* Primary Meta Tags */}
         <title>{siteTitle}</title>
-        <meta name='og:title' content={siteTitle} />
+        <meta name='description' content={siteDescription} />
+        <meta name='robots' content='index, follow' />
+        <link rel='canonical' href={siteUrl} />
+        <link rel='icon' href='/lc-favicon.png' />
+
+        {/* Open Graph / Facebook */}
+        <meta property='og:type' content='website' />
+        <meta property='og:url' content={siteUrl} />
+        <meta property='og:title' content={siteTitle} />
+        <meta property='og:description' content={siteDescription} />
+        <meta property='og:image' content={ogImage} />
+        <meta property='og:site_name' content='Lise Carpenter' />
+        <meta property='og:locale' content='en_US' />
+
+        {/* Twitter */}
         <meta name='twitter:card' content='summary_large_image' />
+        <meta name='twitter:url' content={siteUrl} />
+        <meta name='twitter:title' content={siteTitle} />
+        <meta name='twitter:description' content={siteDescription} />
+        <meta name='twitter:image' content={ogImage} />
+        {/* <meta name='twitter:site' content='@yourtwitterhandle' /> */}
+        {/* <meta name='twitter:creator' content='@yourtwitterhandle' /> */}
+
+        {/* Structured Data */}
+        <script
+          type='application/ld+json'
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
       </Head>
-      <main className={`${sacramento.variable} ${prompt.variable} ${poppins.variable}`}>
+      <main>
         <section>
           <Hero />
         </section>
