@@ -12,26 +12,25 @@ interface Project {
 const projects: Project[] = [
   {
     title: 'British Women\'s Group',
-    description: 'Revamped and relaunched website using React and Tailwind UI. Saved client over $200 annually on hosting costs.',
+    description: 'A complete website overhaul for this Bangkok community organization—now faster, easier to update, and saving over $200/year in hosting costs.',
     image: '/images/work/project-1.png',
     tags: ['NextJS', 'Tailwind', 'React'],
     link: 'https://bwgbangkok.org',
   },
   {
     title: 'Neilson Hays Library',
-    description: 'Kept existing backend running smoothly while migrating to a fresh and fast frontend built with React and NextJS',
+    description: 'Modernized the digital presence of Thailand\'s oldest English-language library with a lightning-fast frontend while preserving their existing content system.',
     image: '/images/work/project-2.png',
     tags: ['NextJS', 'Tailwind', 'Wordpress', 'React'],
     link: 'https://neilsonhayslibrary.org',
   },
   {
     title: 'ACT Counselors',
-    description: 'Built new website integrating with Contentful CMS for easy content updates and translation management.',
+    description: 'A multilingual website for this counseling practice, with an intuitive CMS that lets staff easily manage content and translations without developer help.',
     image: '/images/work/project-3.png',
     tags: ['NextJS', 'Tailwind', 'Contentful'],
     link: 'https://actcounselors.org',
   },
-  // Add more projects as needed
 ]
 
 const Work: FunctionComponent = () => {
