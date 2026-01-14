@@ -18,85 +18,83 @@ export default function Skills() {
         <FontAwesomeIcon
           color='#65cccc'
           icon={faCode}
-          width={20}
+          size="lg"
           className={`mx-auto pt-6 pb-4 animate-bounce animation-delay-25 transition}`}
         />
-        <h2>Coding</h2>
+        <h2>Custom Development</h2>
         <p className='pt-2'>
-          I prefer coding JavaScript/TypeScript on React framework, but have
-          extensive experience working on sites on various CMS platorms
-          (Wordpress, Shopify, Webflow, etc.). Happy to discuss your project's
-          needs and recommend something based on my experience.
+          Get a website built with the right technology for your goals. Whether
+          it's React for a fast, modern experience or WordPress for easy updates—
+          you'll have a site that scales with your business.
         </p>
       </div>
       <div className='skill-box px-4 text-center'>
         <FontAwesomeIcon
           color='#65cccc'
           icon={faPaintBrush}
-          width={20}
+          size="lg"
           className={`mx-auto pt-6 pb-4 animate-bounce animation-delay-25 transition}`}
         />
-        <h2>Design</h2>
+        <h2>Beautiful Design</h2>
         <p className='pt-2'>
-          While I can whip up simple designs, I'm also able to recommend a
-          number of designer contacts with whom I've worked closely, depending
-          on your needs and budgetary requirements.
+          First impressions matter. Your site will look professional, feel
+          trustworthy, and reflect your brand—giving customers confidence to
+          buy from you or get in touch.
         </p>
       </div>
       <div className='skill-box px-4 text-center'>
         <FontAwesomeIcon
           color='#65cccc'
           icon={faGooglePlusSquare}
-          width={20}
+          size="lg"
           className={`mx-auto pt-6 pb-4 animate-bounce animation-delay-50 transition}`}
         />
-        <h2>Inbound Marketing</h2>
+        <h2>SEO That Works</h2>
         <p className='pt-2'>
-          I’ve had 5+ years experience as a Marketing Manager, specialising in
-          digital and social media. While I don't do any freelance marketing
-          work, I can set you up with good practices for SEO and inbound
-          marketing.
+          Be found by the right people. Every site includes SEO best practices
+          so you rank higher on Google and attract organic traffic without
+          paying for ads.
         </p>
       </div>
       <div className='skill-box px-4 text-center'>
         <FontAwesomeIcon
           color='#65cccc'
           icon={faServer}
-          width={20}
+          size="lg"
           className={`mx-auto pt-6 pb-4 animate-bounce animation-delay-50 transition}`}
         />
-        <h2>Webhosting</h2>
+        <h2>Hassle-Free Hosting</h2>
         <p className='pt-2'>
-          Dealing with web hosts and domain names can be quite frustrating. I’ve
-          worked with many of them, and can offer advice. I can advise or manage
-          site migrations as needed.
+          Skip the technical headaches. I'll handle domain setup, hosting
+          configuration, and migrations—so you can focus on running your
+          business.
         </p>
       </div>
       <div className='skill-box px-4 text-center'>
         <FontAwesomeIcon
           color='#65cccc'
           icon={faWordpress}
-          width={20}
+          size="lg"
           className={`mx-auto pt-6 pb-4 animate-bounce animation-delay-75 transition}`}
         />
-        <h2>Copywriting</h2>
+        <h2>Content Strategy</h2>
         <p className='pt-2'>
-          One of the best things you can do for SEO, and for your marketing, is
-          sharing content. I can offer copywriting ideas and help come up with
-          social media optimised blog post ideas.
+          Words that sell. Get help with website copy and blog content that
+          connects with your audience, builds trust, and drives action.
         </p>
       </div>
       <div className='skill-box px-4 text-center'>
         <FontAwesomeIcon
           color='#65cccc'
           icon={faShopify}
-          width={20}
+          size="lg"
           className={`mx-auto pt-6 pb-4 animate-bounce animation-delay-75 transition}`}
         />
-        <h2>E-Commerce</h2>
+        <h2>E-Commerce Ready</h2>
         <p className='pt-2'>
-          I work with both WooCommerce (free) and Shopify (worth the monthly
-          all-inclusive pricing) and can help optimize your store for success.
+          Start selling online with a store that's easy to manage and optimized
+          for conversions. Shopify or WooCommerce—set up to make sales from
+          day one.
         </p>
       </div>
     </div>

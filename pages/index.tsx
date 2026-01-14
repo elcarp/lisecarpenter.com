@@ -6,10 +6,10 @@ import About from '@/components/about'
 import Skills from '@/components/skills'
 
 export const siteTitle =
-  'Lise Carpenter - Freelance Web Developer & Designer | React, Shopify, WordPress in Hong Kong, Bangkok'
+  'Lise Carpenter - Web Developer & Designer | Websites That Grow Your Business'
 
 const siteDescription =
-  "Freelance web developer & designer with fintech and startup experience. Specializing in React, JavaScript, Shopify, and WordPress. I create mobile-friendly, SEO-optimized websites and e-commerce stores. Let's discuss your project today!"
+  "I help businesses launch beautiful, high-converting websites and e-commerce stores. Get a mobile-friendly, SEO-optimized site that attracts customers and drives sales. From startups to established brands—let's build something great together."
 
 const siteUrl = 'https://lisecarpenter.com'
 const ogImage = `${siteUrl}/og-image.png`
@@ -19,9 +19,9 @@ const structuredData = {
   '@type': 'Person',
   name: 'Lise Carpenter',
   url: siteUrl,
-  jobTitle: 'Freelance Web Developer & Designer',
+  jobTitle: 'Web Developer & Designer',
   description: siteDescription,
-  knowsAbout: ['React', 'JavaScript', 'Shopify', 'WordPress', 'Web Development', 'Web Design'],
+  knowsAbout: ['Web Development', 'Web Design', 'E-Commerce', 'SEO', 'React', 'Shopify', 'WordPress'],
   sameAs: [
     // Add your social media URLs here
     // 'https://linkedin.com/in/yourprofile',
@@ -80,7 +80,7 @@ const Home: NextPage = () => {
           </div>
         </section>
         <section className='pb-20' id='contact'>
-          <h1 className='text-white pt-20 pb-4 text-center'>Let's chat!</h1>
+          <h1 className='text-white pt-20 pb-4 text-center'>Ready to grow your business online?</h1>
           <div className='w-full lg:w-1/3 px-5 mx-auto text-center'>
             <form
               action='https://public.herotofu.com/v1/8e2e9d80-36a8-11ef-b65d-f35c9518deb4'

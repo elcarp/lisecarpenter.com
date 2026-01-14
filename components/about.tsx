@@ -5,7 +5,7 @@ import Image from 'next/image'
 const About: FunctionComponent = () => {
   return (
     <div className='w-full md:w-1/2 px-5 md:pl-20 py-20 z-50'>
-      <h1 className={`${utilStyles.heading2Xl} pb-4`}>Profile & Background</h1>
+      <h1 className={`${utilStyles.heading2Xl} pb-4`}>Hi, I'm Lise</h1>
       <Image
         priority
         src='/images/profile.jpg'
@@ -15,20 +15,19 @@ const About: FunctionComponent = () => {
         alt='Lise Carpenter'
       />
       <p className='pt-4'>
-        I started my career in financial services over a decade ago, but my love
-        of code led me to work at a startup tech academy. I learned some new
-        skills, and began completing web design and development projects on my
-        own. I'm currently working in fintech as a frontend web developer,
-        mostly coding react and elixir projects. On a freelance basis, I enjoy
-        working with my clients to design and launch simple, beautiful and
-        mobile responsive websites and e-commerce shops.
+        I help business owners like you get online with websites that actually
+        deliver results. With over a decade of experience in financial services
+        and tech startups, I understand what it takes to build trust and convert
+        visitors into paying customers. Whether you need a stunning portfolio,
+        a lead-generating business site, or an e-commerce store ready to sell—
+        I'll create something that looks beautiful and works flawlessly on every device.
       </p>
-      <h1 className={`${utilStyles.heading2Xl} pt-4`}>Etcetera</h1>
+      <h1 className={`${utilStyles.heading2Xl} pt-4`}>Working with me</h1>
       <p>
-        I’m American/Thai, based in Hong Kong and Bangkok since 6 years. Most of
-        the time, however, I work remotely. I speak English, Thai and French.
-        Passionate about practicing yoga (certified RYT 200 teacher – check out
-        my yoga site here!) and traveling the world.
+        Based in Hong Kong and Bangkok, I work with clients worldwide. I speak
+        English, Thai and French. You'll get clear communication, realistic
+        timelines, and a website you're proud to share. No tech jargon, no
+        endless revisions—just a smooth process from first call to launch day.
       </p>
     </div>
   )
