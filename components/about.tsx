@@ -1,34 +1,40 @@
 import { FunctionComponent } from 'react'
-import utilStyles from '../styles/utils.module.css'
 import Image from 'next/image'
 
 const About: FunctionComponent = () => {
   return (
-    <div className='w-full md:w-1/2 px-5 md:pl-20 py-20 z-50'>
-      <h1 className={`${utilStyles.heading2Xl} pb-4`}>Hi, I'm Lise</h1>
+    <div className='mx-auto grid max-w-6xl gap-12 px-5 py-24 md:grid-cols-[auto_1fr]'>
       <Image
-        priority
         src='/images/profile.jpg'
-        className={utilStyles.borderCircle}
-        height={144}
-        width={144}
+        className='rounded-full border border-line'
+        height={160}
+        width={160}
         alt='Lise Carpenter'
       />
-      <p className='pt-4'>
-        I help business owners like you get online with websites that actually
-        deliver results. With over a decade of experience in financial services
-        and tech startups, I understand what it takes to build trust and convert
-        visitors into paying customers. Whether you need a stunning portfolio,
-        a lead-generating business site, or an e-commerce store ready to sell—
-        I'll create something that looks beautiful and works flawlessly on every device.
-      </p>
-      <h1 className={`${utilStyles.heading2Xl} pt-4`}>Working with me</h1>
-      <p>
-        Based in Hong Kong and Bangkok, I work with clients worldwide. I speak
-        English, Thai and French. You'll get clear communication, realistic
-        timelines, and a website you're proud to share. No tech jargon, no
-        endless revisions—just a smooth process from first call to launch day.
-      </p>
+      <div className='max-w-3xl text-gray-300'>
+        <p className='eyebrow pb-3'>About</p>
+        <h2 className='pb-6 text-white'>Hi, I&apos;m Lise</h2>
+        <p>
+          I&apos;m an AI engineer with a full-stack web background and over a
+          decade in financial services and tech startups. I&apos;ve spent my
+          career shipping software for real users, and now I bring that
+          experience to AI: I build the retrieval pipelines, agents and evals
+          that turn a promising demo into something your business can depend
+          on.
+        </p>
+        <p className='pt-4'>
+          Coming from fintech, I care about accuracy, privacy and cost as much
+          as the model itself. I&apos;ll tell you plainly when AI is the right
+          tool and when a simpler solution will do.
+        </p>
+        <h3 className='pt-8 text-white'>Working with me</h3>
+        <p className='pt-2'>
+          I&apos;m based in Hong Kong and Bangkok, work with clients worldwide,
+          and speak English, Thai and French. Engagements usually start with a
+          short scoping call, then a focused prototype, so you can see real
+          results before committing to a full build.
+        </p>
+      </div>
     </div>
   )
 }

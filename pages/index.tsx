@@ -5,12 +5,16 @@ import Tech from '@/components/tech'
 import About from '@/components/about'
 import Skills from '@/components/skills'
 import Work from '@/components/work'
+import Nav, { githubUrl, linkedinUrl } from '@/components/nav'
 
 export const siteTitle =
-  'Lise Carpenter - Web Developer & Designer | Websites That Grow Your Business'
+  'Lise Carpenter - AI Engineer | LLM Apps, RAG & AI Agents for Business'
 
 const siteDescription =
-  "I help businesses launch beautiful, high-converting websites and e-commerce stores. Get a mobile-friendly, SEO-optimized site that attracts customers and drives sales. From startups to established brands—let's build something great together."
+  'Freelance AI engineer helping businesses ship reliable AI: LLM-powered apps, RAG over your own data, AI agents that automate workflows, and evals that prove it works. Based in Hong Kong and Bangkok, working worldwide.'
+
+const inputClass =
+  'w-full rounded-lg border border-line bg-surface px-4 py-3 text-sm text-white placeholder:text-gray-500 focus:border-aqua-blue focus:outline-none'
 
 const siteUrl = 'https://lisecarpenter.com'
 const ogImage = `${siteUrl}/og-image.png`
@@ -20,14 +24,19 @@ const structuredData = {
   '@type': 'Person',
   name: 'Lise Carpenter',
   url: siteUrl,
-  jobTitle: 'Web Developer & Designer',
+  jobTitle: 'AI Engineer',
   description: siteDescription,
-  knowsAbout: ['Web Development', 'Web Design', 'E-Commerce', 'SEO', 'React', 'Shopify', 'WordPress'],
-  sameAs: [
-    // Add your social media URLs here
-    // 'https://linkedin.com/in/yourprofile',
-    // 'https://github.com/yourprofile',
+  knowsAbout: [
+    'Artificial Intelligence',
+    'Large Language Models',
+    'Retrieval-Augmented Generation',
+    'AI Agents',
+    'LLM Evaluation',
+    'Python',
+    'TypeScript',
+    'Next.js',
   ],
+  sameAs: [githubUrl, linkedinUrl],
 }
 
 const Home: NextPage = () => {
@@ -65,108 +74,94 @@ const Home: NextPage = () => {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
       </Head>
-      <main>
+      <Nav />
+      <main id='top' className='text-white'>
         <section>
           <Hero />
+        </section>
+        <section id='services' className='scroll-mt-16'>
+          <Skills />
         </section>
         <section>
           <Tech />
         </section>
-        <section>
-          <div className='about-me w-full text-white'>
-            <div className='about-overlay block md:flex'>
-              <About />
-              <Skills />
-            </div>
-          </div>
-        </section>
-        <section>
+        <section id='work' className='scroll-mt-16'>
           <Work />
         </section>
-        <section className='pb-20' id='contact'>
-          <h1 className='text-white pt-20 pb-4 text-center'>Ready to grow your business online?</h1>
-          <div className='w-full lg:w-1/3 px-5 mx-auto text-center'>
+        <section id='about' className='scroll-mt-16 border-t border-line'>
+          <About />
+        </section>
+        <section id='contact' className='scroll-mt-16 border-t border-line hero-grid'>
+          <div className='mx-auto max-w-xl px-5 py-24'>
+            <p className='eyebrow pb-3 text-center'>Contact</p>
+            <h2 className='text-center'>Have an AI idea or problem?</h2>
+            <p className='pt-4 text-center text-gray-400'>
+              Tell me what you&apos;re trying to do. I&apos;ll reply within two
+              business days, and the first call is free.
+            </p>
             <form
+              className='space-y-4 pt-10'
               action='https://public.herotofu.com/v1/8e2e9d80-36a8-11ef-b65d-f35c9518deb4'
               method='post'
               acceptCharset='UTF-8'>
-              <div className='p-2 w-full'>
+              <input
+                className={inputClass}
+                name='Name'
+                id='name'
+                type='text'
+                required
+                placeholder='Your name'
+                aria-label='Your name'
+              />
+              <input
+                className={inputClass}
+                name='Email'
+                id='email'
+                type='email'
+                required
+                placeholder='Your email'
+                aria-label='Your email'
+              />
+              <textarea
+                className={`${inputClass} min-h-[140px]`}
+                name='Message'
+                id='message'
+                required
+                placeholder='What would you like AI to do for your business?'
+                aria-label='Your message'
+              />
+              <div
+                style={{
+                  textIndent: '-99999px',
+                  whiteSpace: 'nowrap',
+                  overflow: 'hidden',
+                  position: 'absolute',
+                }}
+                aria-hidden='true'>
                 <input
-                  className='p-2 rounded-lg w-full'
-                  name='Name'
-                  id='name'
                   type='text'
-                  required
-                  placeholder='Your name'
+                  name='_gotcha'
+                  tabIndex={-1}
+                  autoComplete='off'
                 />
               </div>
-              <div className='p-2 w-full'>
-                <input
-                  className='p-2 rounded-lg w-full'
-                  name='Email'
-                  id='email'
-                  type='email'
-                  required
-                  placeholder='Your email'
-                />
-              </div>
-              <div className='p-2 w-full'>
-                <textarea
-                  className='p-2 rounded-lg w-full'
-                  name='Message'
-                  id='message'
-                  required
-                  placeholder='Your message'
-                />
-              </div>
-              <div>
-                <input
-                  className='bg-aqua-blue text-white w-full mt-10 px-4 py-2 rounded-lg border border-aqua-blue hover:bg-transparent hover:text-aqua-blue animate-pulse'
-                  type='submit'
-                  value='Get in touch'
-                />
-                <div
-                  style={{
-                    textIndent: '-99999px',
-                    whiteSpace: 'nowrap',
-                    overflow: 'hidden',
-                    position: 'absolute',
-                  }}
-                  aria-hidden='true'>
-                  <input
-                    type='text'
-                    name='_gotcha'
-                    tabIndex={-1}
-                    autoComplete='off'
-                  />
-                </div>
-              </div>
+              <button type='submit' className='btn-primary w-full justify-center'>
+                Get in touch
+              </button>
             </form>
-            <div className='mt-8 pt-6 border-t border-zinc-800'>
-              <p className='text-gray-500 text-sm mb-3'>
-                Wait, I need to think this through first...
-              </p>
-              <a
-                href='/intake'
-                className='text-aqua-blue hover:text-white transition-colors text-sm inline-flex items-center gap-2 group'>
-                Take me to the website questionnaire
-                <svg
-                  className='w-4 h-4 group-hover:translate-x-1 transition-transform'
-                  fill='none'
-                  stroke='currentColor'
-                  viewBox='0 0 24 24'>
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    strokeWidth={2}
-                    d='M14 5l7 7m0 0l-7 7m7-7H3'
-                  />
-                </svg>
-              </a>
-            </div>
           </div>
         </section>
       </main>
+      <footer className='border-t border-line py-8 text-center text-xs text-gray-500'>
+        © {new Date().getFullYear()} Lise Carpenter ·{' '}
+        <a href={githubUrl} target='_blank' rel='noopener noreferrer'>
+          GitHub
+        </a>{' '}
+        ·{' '}
+        <a href={linkedinUrl} target='_blank' rel='noopener noreferrer'>
+          LinkedIn
+        </a>
+      </footer>
     </>
   )
 }

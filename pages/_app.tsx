@@ -1,5 +1,5 @@
 import type { AppProps } from 'next/app'
-import { Sacramento, Prompt, Poppins } from 'next/font/google'
+import { Sacramento, Inter, JetBrains_Mono } from 'next/font/google'
 import '../styles/global.css'
 
 const sacramento = Sacramento({
@@ -9,24 +9,24 @@ const sacramento = Sacramento({
   variable: '--font-sacramento',
 })
 
-const prompt = Prompt({
-  weight: ['200', '300', '400', '500', '600', '700', '800'],
+const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-prompt',
+  variable: '--font-inter',
 })
 
-const poppins = Poppins({
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+const jetbrainsMono = JetBrains_Mono({
+  weight: ['400', '500'],
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-poppins',
+  variable: '--font-mono',
 })
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div className={`${sacramento.variable} ${prompt.variable} ${poppins.variable}`}>
+    <div
+      className={`${sacramento.variable} ${inter.variable} ${jetbrainsMono.variable} font-sans`}>
       <Component {...pageProps} />
     </div>
   )
-} 
+}
