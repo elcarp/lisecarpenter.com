@@ -6,7 +6,7 @@ const Hero: FunctionComponent = () => {
     <div className='hero-grid border-b border-line'>
       <div className='mx-auto grid max-w-6xl items-center gap-12 px-5 py-24 md:py-32 lg:grid-cols-2'>
         <div>
-          <p className='eyebrow pb-4'>AI Engineer · Hong Kong &amp; Bangkok</p>
+          <p className='eyebrow pb-4'>AI Engineer · Bangkok</p>
           <h1 className='text-white md:text-6xl'>
             I build AI features that work in production.
           </h1>

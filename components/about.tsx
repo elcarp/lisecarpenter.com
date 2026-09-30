@@ -29,7 +29,7 @@ const About: FunctionComponent = () => {
         </p>
         <h3 className='pt-8 text-white'>Working with me</h3>
         <p className='pt-2'>
-          I&apos;m based in Hong Kong and Bangkok, work with clients worldwide,
+          I&apos;m based in Bangkok, work with clients worldwide,
           and speak English, Thai and French. Engagements usually start with a
           short scoping call, then a focused prototype, so you can see real
           results before committing to a full build.

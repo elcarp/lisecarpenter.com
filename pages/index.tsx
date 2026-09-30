@@ -11,7 +11,7 @@ export const siteTitle =
   'Lise Carpenter - AI Engineer | LLM Apps, RAG & AI Agents for Business'
 
 const siteDescription =
-  'Freelance AI engineer helping businesses ship reliable AI: LLM-powered apps, RAG over your own data, AI agents that automate workflows, and evals that prove it works. Based in Hong Kong and Bangkok, working worldwide.'
+  'Freelance AI engineer helping businesses ship reliable AI: LLM-powered apps, RAG over your own data, AI agents that automate workflows, and evals that prove it works. Based in Bangkok, working worldwide.'
 
 const inputClass =
   'w-full rounded-lg border border-line bg-surface px-4 py-3 text-sm text-white placeholder:text-gray-500 focus:border-aqua-blue focus:outline-none'
